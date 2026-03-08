@@ -1,0 +1,26 @@
+name: MokuView
+options:
+  bundleIdPrefix: org.eeexception.mokuvie
+targets:
+  MokuView:
+    type: application
+    platform: macOS
+    deploymentTarget: "14.0"
+    sources: [Sources]
+    settings:
+      base:
+        GENERATE_INFOPLIST_FILE: YES
+        CURRENT_PROJECT_VERSION: 1
+        MARKETING_VERSION: 1.0.0
+        DEVELOPMENT_TEAM: ""
+  
+  MokuViewTests:
+    type: bundle.unit-test
+    platform: macOS
+    deploymentTarget: "14.0"
+    sources: [Tests]
+    settings:
+      base:
+        GENERATE_INFOPLIST_FILE: YES
+    dependencies:
+      - target: MokuView
