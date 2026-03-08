@@ -14,6 +14,17 @@ A fast, modern macOS application designed to analyze your disk space, visualize 
 - macOS (built natively for Apple platforms).
 - Xcode (to build from source) and [XcodeGen](https://github.com/yonaskolb/XcodeGen) for generating the project.
 
+## Installation & Security
+
+Since this is an open-source project and is not signed by an Apple Developer certificate, macOS might prevent it from running the first time.
+
+If you see a message saying the developer cannot be verified:
+1. Locate the app in your **Applications** folder.
+2. **Right-click** (or Control-click) the application icon and select **Open**.
+3. Click **Open** in the dialog that appears.
+
+After this, the app will open normally with a double-click.
+
 ## Getting Started
 
 ### Using Xcode
