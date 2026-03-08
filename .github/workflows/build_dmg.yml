@@ -3,8 +3,8 @@ name: Build DMG
 on:
   push:
     tags:
-      - 'release-v*' # Срабатывает при пуше тегов release-v1.0 и т.д.
-  workflow_dispatch: # Позволяет запустить сборку вручную через интерфейс GitHub
+      - 'release-v*' # Triggered on release tags like release-v1.0.0
+  workflow_dispatch: # Allows manual trigger from GitHub UI
 
 jobs:
   build:
@@ -23,7 +23,7 @@ jobs:
       - name: Build App
         run: ./tools/build.sh
         env:
-          # Для CI отключаем подпись кода, если у вас не настроены сертификаты в секретах GitHub
+          # Disable code signing for CI if certificates are not set up in Secrets
           CODE_SIGNING_ALLOWED: NO
 
       - name: Create DMG

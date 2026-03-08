@@ -8,7 +8,7 @@ on:
 
 jobs:
   test:
-    # Используем бесплатный macOS агент от GitHub
+    # Use GitHub-hosted macOS runner
     runs-on: macos-latest
 
     steps:
