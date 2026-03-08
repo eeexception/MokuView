@@ -1,5 +1,8 @@
 # Moku View
 
+[![Tests](https://github.com/eeexception/MokuView/actions/workflows/tests.yml/badge.svg)](https://github.com/eeexception/MokuView/actions/workflows/tests.yml)
+[![Build DMG](https://github.com/eeexception/MokuView/actions/workflows/build_dmg.yml/badge.svg)](https://github.com/eeexception/MokuView/actions/workflows/build_dmg.yml)
+
 A fast, modern macOS application designed to analyze your disk space, visualize directories, and easily find large files. Moku View helps you track and clean up your drive providing a clean, responsive, and native interface.
 
 ![App View](assets/app_view.png)
