@@ -1,0 +1,29 @@
+name: Feature Request
+description: Suggest an idea or improvement for Moku View.
+title: "[Feature]: <Short title>"
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Is your feature request related to a problem?
+      placeholder: A clear description of what the problem is (e.g. "I'm frustrated when...")
+    validations:
+      required: true
+  - type: textarea
+    id: solution
+    attributes:
+      label: Describe the solution you'd like
+      placeholder: Describe the desired behavior or new functionality.
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Describe alternatives you've considered
+      placeholder: Any alternative solutions or features you've thought of.
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional context
+      placeholder: Add any other context or screenshots about the feature request here.
