@@ -1,0 +1,51 @@
+name: Bug Report
+description: Report a software error or unexpected behavior in Moku View.
+title: "[BUG]: <Short description>"
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please provide as much detail as possible so we can reproduce the issue.
+  - type: textarea
+    id: description
+    attributes:
+      label: Describe the bug
+      placeholder: What happened?
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps to Reproduce
+      value: |
+        1. Open Moku View
+        2. ...
+        3. ...
+    validations:
+      required: true
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Architecture
+      options:
+        - Apple Silicon (M1/M2/M3/M4)
+        - Intel Mac
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Moku View Version
+      placeholder: e.g. 1.0.0 (Build 1)
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+      placeholder: What should have happened?
+  - type: screenshots
+    attributes:
+      label: Screenshots or Video
+      description: Drag and drop images or videos here.
