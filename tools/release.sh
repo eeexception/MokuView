@@ -41,7 +41,7 @@ if [[ -n $(git status -s) ]]; then
     fi
 fi
 
-TAG_NAME="v$VERSION"
+TAG_NAME="release-v$VERSION"
 
 echo "🔖 New Tag will be: $TAG_NAME"
 
