@@ -20,6 +20,16 @@ jobs:
       - name: Make scripts executable
         run: chmod +x tools/*.sh
 
+      - name: Generate Xcode Project
+        run: xcodegen generate
+
+      - name: Run Tests
+        run: |
+          xcodebuild test \
+            -scheme MokuView \
+            -destination 'platform=macOS' \
+            -parallel-testing-enabled YES
+
       - name: Build App
         run: ./tools/build.sh
         env:
